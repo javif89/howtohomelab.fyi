@@ -4,6 +4,12 @@ A guide for homies who want to start self-hosting to take control of their data,
 which is arguably the most valuable thing you have in life. 
 Hopefully we can help you skip through the BS.
 
+Built with the [Zensical](https://zensical.org) static site generator.
+
+To contribute just fork and clone the repo locally, install zensical
+and [just](just.systems) or use the included dev shell, 
+and run `just init` then `just serve`.
+
 ## Outline of topics to cover
 
 Each item in the list will have a status of: TODO, WIP, or WRITTEN.
@@ -13,6 +19,12 @@ Each item in the list will have a status of: TODO, WIP, or WRITTEN.
 - WRITTEN: Good enough to read, but can always use additions, more contributions.
 
 ### Guides
+
+**Home page** ![TODO](https://img.shields.io/badge/TODO-orange)
+
+The home page should outline the paths you can take by linking
+to the different guides and topics. It should help someone
+find what they're looking for in five minutes or less.
 
 **A basic homelab** ![TODO](https://img.shields.io/badge/TODO-orange)
 
