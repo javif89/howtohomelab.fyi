@@ -4,20 +4,12 @@ site_description = "The best launcher for wayland compositors"
 site_author = "Javier Feliz"
 site_url = "https://waycast.dev"
 extra_css = ["stylesheets/extra.css"]
-repo_url = "https://github.com/javif89/waycast"
-repo_name = "javif89/waycast"
+repo_url = "https://github.com/javif89/howtohomelab.fyi"
+repo_name = "javif89/howtohomelab.fyi"
 
 copyright = """
 Copyright &copy; 2025 Javier Feliz 
 """
-
-[project.markdown_extensions.pymdownx.highlight]
-anchor_linenums = true
-line_spans = "__span"
-pygments_lang_class = true
-[project.markdown_extensions.pymdownx.inlinehilite]
-[project.markdown_extensions.pymdownx.snippets]
-[project.markdown_extensions.pymdownx.superfences]
 
 [project.theme]
 # logo = "assets/logo.svg"
@@ -69,3 +61,13 @@ generator = false
 [project.markdown_extensions.attr_list]
 [project.markdown_extensions.md_in_html]
 [project.markdown_extensions.pymdownx.emoji]
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.snippets]
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+    { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
