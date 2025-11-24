@@ -7,6 +7,10 @@ extra_css = ["stylesheets/extra.css"]
 repo_url = "https://github.com/javif89/howtohomelab.fyi"
 repo_name = "javif89/howtohomelab.fyi"
 
+[project.extra.status]
+wip = "Work in progress"
+todo = "TODO"
+
 copyright = """
 Copyright &copy; 2025 Javier Feliz 
 """

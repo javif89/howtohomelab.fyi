@@ -1,3 +1,8 @@
+---
+status: wip
+---
+
+TODO
 Your homelab journey doesn't have to start with a full size server rack
 and a complex, high availability system. As a matter of fact, you can start
 self hosting with just a single computer.
