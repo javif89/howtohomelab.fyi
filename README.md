@@ -26,7 +26,7 @@ The home page should outline the paths you can take by linking
 to the different guides and topics. It should help someone
 find what they're looking for in five minutes or less.
 
-**A basic homelab** ![TODO](https://img.shields.io/badge/TODO-orange)
+**A basic homelab** ![WIP](https://img.shields.io/badge/WIP-yellow)
 
 The most minimal homelab setup consisting of a NAS and maybe a router.
 
