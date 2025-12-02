@@ -1,7 +1,7 @@
 default:
     @just -l
 
-serve:
+dev:
     uv run zensical serve
 
 init:

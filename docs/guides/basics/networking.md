@@ -5,6 +5,31 @@ with other devices. For this we use **IP Addresses**.
 
 An IP address is 32 bits, and it's divided into 4 octets. It ends up looking something like `10.20.30.40`.
 
+### IP Address Classes
+
+IPv4 originally divided addresses into classes (A, B, C, D, E). Modern networks use [CIDR](../../homelab-topics/networking/cidr.md) instead,
+so the class you pick for your homelab network doesn't matter and it's more of a stylistic choice.
+
+We'll cover the common IP address classes nonetheless, for your own knowledge.
+
+**Class A — 10.0.0.0/8**
+
+Range: 10.0.0.0 – 10.255.255.255
+
+Default mask: 255.0.0.0
+
+**Class B — 172.16.0.0/12**
+
+Range: 172.16.0.0 – 172.31.255.255
+
+Default mask: 255.240.0.0
+
+**Class C — 192.168.0.0/16**
+
+Range: 192.168.0.0 – 192.168.255.255
+
+Default mask: 255.255.255.0
+
 ## Subnetting
 
 A network can have subnets, essentially creating networks within a network. This allows you
@@ -13,10 +38,6 @@ subnets.
 
 We won't get into the math behind subnetting right now, but the general pattern is,
 the more subnets within a network, the less devices per subnet, and vice-versa.
-
-!!! warning "Missing content"
-
-    Need to talk about IP address classes and which ones you can pick for your scheme. 
 
 ### Subnet Masks
 
@@ -42,6 +63,8 @@ block
 This can also be represented as:
 
 `10.0.0.20/24`
+
+See [CIDR](../../homelab-topics/networking/cidr.md) for further explanation of that syntax.
 
 Meaning that the first 24 bits of the IP address are used for the subnet.
 
@@ -177,3 +200,14 @@ flowchart TD
 
     us["Request to 10.20.0.12:9002"] --> app3
 ```
+
+### DHCP
+
+DHCP or "Dynamic Host Configuration Protocol" is a fancy way of describing the process
+of automatically handing out an IP when a new device connects to your network.
+
+DHCP can be disabled in some cases. For example, if you don't want the IP of your servers randomly
+changing, then disabling DHCP for that network is a good idea. 
+
+On your WiFi network though, you might want to leave DHCP on unless you want to manually set the IP
+of every device that connects.
